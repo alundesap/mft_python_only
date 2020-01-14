@@ -1,0 +1,8 @@
+applications:
+- name: Bindetermination_10_01_2020
+  memory: 512M
+  disk_quota: 1024M
+  instances: 1
+  buildpack: python_buildpack
+  command: python3 -m pip install -r requirements.txt && python3 server.py
+  
