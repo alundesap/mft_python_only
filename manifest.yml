@@ -4,5 +4,5 @@ applications:
   disk_quota: 1024M
   instances: 1
   buildpack: python_buildpack
-  command: python3 -m pip install -r requirements.txt && python3 server.py
+  command: python3 server.py
   
