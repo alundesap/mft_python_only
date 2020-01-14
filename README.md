@@ -148,3 +148,23 @@ port: 20217
 user: CONCILE_COM_V0_DEV_AWBCSAK5VZTQ7Y481P3RW5SKJ_RT
 pass: Rm1Zt84tnC1egEFbpwdmdP47FP_1GbcwTDE5qe3AmZ9UAEYRkEbwi3wO402s29j_iI0MKnFcuvutIUZOF.Gw4Q0Lp-TiVmXsBeP-5qXXLnIli0R8NolfhIyKUZa92xwh
 ```
+
+# Debugging once deployed.
+```
+cf enable-ssh Bindetermination_10_01_2020
+cf restart Bindetermination_10_01_2020
+cf ssh Bindetermination_10_01_2020
+```
+
+# Once ssh'd in.
+```
+cd app
+vi server.py
+:w
+-- Test in the browser
+```
+
+# Watch the application logs while testing.
+```
+cf logs Bindetermination_10_01_2020
+```
